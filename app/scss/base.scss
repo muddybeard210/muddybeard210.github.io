@@ -50,7 +50,7 @@ a:link, a:visited {
 .logoText {
   width: 50%;
   font-size: 36px;
-  color: black;
+  color: #4f4f4f;
   margin-top: 10px;
   margin-bottom: 10px;
 
@@ -59,10 +59,10 @@ a:link, a:visited {
   }
   & span {
     font-size: 36px;
-    font-weight: 100;
+    color: black;
   }
-  & .right-span {
-    margin-left: -10px;
+  & p {
+    color: black;
   }
 }
 .contactBtns i {
