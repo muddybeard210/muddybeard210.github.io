@@ -2,8 +2,8 @@
 
 require('./nav.scss');
 const angular = require('angular');
-const demoApp = angular.module('demoApp');
+const contactApp = angular.module('contactApp');
 
-demoApp.component('appNav', {
+contactApp.component('appNav', {
   template: require('./nav.html')
 });

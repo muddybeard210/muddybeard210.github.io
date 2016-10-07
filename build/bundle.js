@@ -44,7 +44,7 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	eval("'use strict';\n\n// webpack assets\n\n__webpack_require__(1);\n__webpack_require__(2);\n\n// npm modules\nvar angular = __webpack_require__(13);\n\n// angular modules\nangular.module('demoApp', []);\n\n// angular services\n\n// angular components\n__webpack_require__(15);\n__webpack_require__(19);\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/entry.js\n ** module id = 0\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/entry.js?");
+	eval("'use strict';\n\n// webpack assets\n\n__webpack_require__(1);\n__webpack_require__(2);\n\n// npm modules\nvar angular = __webpack_require__(13);\n\n// angular modules\nangular.module('contactApp', []);\n\n// angular services\n\n// angular components\n__webpack_require__(15);\n__webpack_require__(19);\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/entry.js\n ** module id = 0\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/entry.js?");
 
 /***/ },
 /* 1 */
@@ -84,7 +84,7 @@
 /* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
-	eval("'use strict';\n\n__webpack_require__(16);\n\nvar angular = __webpack_require__(13);\n\nangular.module('demoApp').directive('appMain', function () {\n  return {\n    restrict: 'E',\n    replace: true,\n    template: __webpack_require__(18),\n    controller: [MainController],\n    controllerAs: 'mainCtrl',\n    bindToController: true,\n    scope: {}\n  };\n});\n\nfunction MainController() {\n  this.example = 'hello world';\n};\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/component/main/index.js\n ** module id = 15\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/component/main/index.js?");
+	eval("'use strict';\n\n__webpack_require__(16);\n\nvar angular = __webpack_require__(13);\n\nangular.module('contactApp').directive('appMain', function () {\n  return {\n    restrict: 'E',\n    replace: true,\n    template: __webpack_require__(18),\n    controller: [MainController],\n    controllerAs: 'mainCtrl',\n    bindToController: true,\n    scope: {}\n  };\n});\n\nfunction MainController() {\n  this.example = 'hello world';\n};\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/component/main/index.js\n ** module id = 15\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/component/main/index.js?");
 
 /***/ },
 /* 16 */
@@ -103,7 +103,7 @@
 /* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
-	eval("'use strict';\n\n__webpack_require__(20);\nvar angular = __webpack_require__(13);\nvar demoApp = angular.module('demoApp');\n\ndemoApp.component('appNav', {\n  template: __webpack_require__(22)\n});\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/component/nav/index.js\n ** module id = 19\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/component/nav/index.js?");
+	eval("'use strict';\n\n__webpack_require__(20);\nvar angular = __webpack_require__(13);\nvar contactApp = angular.module('contactApp');\n\ncontactApp.component('appNav', {\n  template: __webpack_require__(22)\n});\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/component/nav/index.js\n ** module id = 19\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/component/nav/index.js?");
 
 /***/ },
 /* 20 */

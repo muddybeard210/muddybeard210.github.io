@@ -8,10 +8,11 @@ require('./scss/base.scss');
 const angular = require('angular');
 
 // angular modules
-angular.module('demoApp', []);
+angular.module('contactApp', []);
 
 // angular services
 
 // angular components
 require('./component/main');
 require('./component/nav');
+require('./component/about');
