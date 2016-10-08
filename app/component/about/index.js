@@ -17,25 +17,18 @@ contactApp.directive('appAbout', function(){
     scope: {}
   };
 });
-
 contactApp.controller('AboutController', ['$log', '$location', '$rootScope', function($log, $location, $rootScope){
   $log.debug('yolo!!');
   $('.mainBox').on('click', function(){
     $('.mainBox').hide();
   });
-
   if ($location.path() === '/about'){
     $('.mainBox').fadeIn('fast');
   }
-
   $rootScope.$on('$locationChangeSuccess', function () {
     if ($location.path() === '/about'){
       $('.mainBox').fadeIn('fast');
       return;
-    }
-    $('.mainBox').hide();
-
+    } $('.mainBox').fadeOut('fast');
   });
-
-
 }]);
