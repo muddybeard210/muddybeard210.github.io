@@ -17,14 +17,18 @@ contactApp.directive('appAbout', function(){
     scope: {}
   };
 });
-
-contactApp.controller('AboutController', ['$log', function($log){
+contactApp.controller('AboutController', ['$log', '$location', '$rootScope', function($log, $location, $rootScope){
   $log.debug('yolo!!');
   $('.mainBox').on('click', function(){
     $('.mainBox').hide();
   });
-  $('#aboutBtn').on('click', function(){
+  if ($location.path() === '/about'){
     $('.mainBox').fadeIn('fast');
+  }
+  $rootScope.$on('$locationChangeSuccess', function () {
+    if ($location.path() === '/about'){
+      $('.mainBox').fadeIn('fast');
+      return;
+    } $('.mainBox').fadeOut('fast');
   });
-
 }]);
