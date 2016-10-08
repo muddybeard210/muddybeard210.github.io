@@ -23,5 +23,8 @@ contactApp.controller('AboutController', ['$log', function($log){
   $('.mainBox').on('click', function(){
     $('.mainBox').hide();
   });
+  $('#aboutBtn').on('click', function(){
+    $('.mainBox').fadeIn('fast');
+  });
 
 }]);
