@@ -2,11 +2,21 @@
 
 
 .mainBox {
-  height: 400px;
+  height: 50vh;
   width: 95%;
   margin: 5% auto 0 auto;
   background-color: rgba(#ffffff, 0.5);
   box-shadow: 1px 1px 16px 12px rgba(#ffffff, 0.5);
 
   float: none;
+
+}
+.aboutPhoto {
+  float: none;
+
+  & img {
+    height: 50vh;
+    margin: 2px;
+    border-radius: 10px;
+  }
 }
