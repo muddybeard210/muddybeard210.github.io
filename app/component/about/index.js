@@ -29,6 +29,6 @@ contactApp.controller('AboutController', ['$log', '$location', '$rootScope', fun
     if ($location.path() === '/about'){
       $('.mainBox').fadeIn('fast');
       return;
-    } $('.mainBox').fadeOut('fast');
+    } $('.mainBox').hide();
   });
 }]);
