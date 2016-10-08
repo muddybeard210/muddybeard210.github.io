@@ -3,7 +3,7 @@ require('./main.scss');
 
 const angular = require('angular');
 
-angular.module('demoApp').directive('appMain', function(){
+angular.module('contactApp').directive('appMain', function(){
   return {
     restrict: 'E',
     replace: true,
@@ -16,5 +16,5 @@ angular.module('demoApp').directive('appMain', function(){
 });
 
 function MainController(){
-  this.example = 'hello world';
-};
+  console.log('hello world');
+}
