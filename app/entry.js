@@ -19,27 +19,32 @@ angular.module('contactApp', [ngRoute, ngAnimate])
     controller: 'AboutController',
     controllerAs: 'aboutCtrl',
   })
+  .when('/projects', {
+    template: require('./view/projects/projects.html'),
+    controller: 'ProjectsController',
+    controllerAs: 'projectCtrl',
+  })
   .otherwise({
     redirectTo:'/home',
   });
-}])
-.animation('.reveal-animation', function() {
-  return {
-    enter: function(element, done) {
-      element.css('display', 'none');
-      element.fadeIn(2000, done);
-      return function() {
-        element.stop();
-      };
-    },
-    leave: function(element, done) {
-      element.fadeOut(2000, done);
-      return function() {
-        element.stop();
-      };
-    }
-  };
-});
+}]);
+// .animation('.reveal-animation', function() {
+//   return {
+//     enter: function(element, done) {
+//       element.css('display', 'none');
+//       element.fadeIn(2000, done);
+//       return function() {
+//         element.stop();
+//       };
+//     },
+//     leave: function(element, done) {
+//       element.fadeOut(2000, done);
+//       return function() {
+//         element.stop();
+//       };
+//     }
+//   };
+// });
 
 // angular services
 
@@ -47,3 +52,4 @@ angular.module('contactApp', [ngRoute, ngAnimate])
 require('./component/main');
 require('./component/nav');
 require('./view/about');
+require('./view/projects');
