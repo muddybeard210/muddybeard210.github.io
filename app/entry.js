@@ -7,10 +7,11 @@ require('./scss/base.scss');
 // npm modules
 const angular = require('angular');
 const ngRoute = require('angular-route');
+const ngAnimate = require('angular-animate');
 
 
 // angular modules
-angular.module('contactApp', [ngRoute])
+angular.module('contactApp', [ngRoute, ngAnimate])
 .config(['$routeProvider', '$logProvider', function($routeProvider, $logProvider){
   $routeProvider
   .when('/about', {
