@@ -21,6 +21,7 @@ contactApp.controller('AboutController', ['$log', AboutController]);
 
 function AboutController($log) {
   $log.debug('entered AboutController');
+
 }
 
 
