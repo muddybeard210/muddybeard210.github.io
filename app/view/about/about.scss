@@ -1,11 +1,19 @@
 @import "_theme";
 
+@keyframes appAbout {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
 
+.app-about {
+  animation: 0.5s;
+  animation-name: appAbout;
+}
 .mainBox {
   display: flex;
-  height: 50vh;
   width: 95%;
   margin: 5% auto 0 auto;
+  margin-bottom: 50px;
   background-color: rgba(#ffffff, 0.5);
   box-shadow: 1px 1px 16px 12px rgba(#ffffff, 0.5);
 
@@ -22,7 +30,7 @@
   }
 }
 .bio {
-  float: left;
+  text-align: center;
 
   & p{
     font-size: 24px;

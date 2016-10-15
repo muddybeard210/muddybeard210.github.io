@@ -1,13 +1,27 @@
 @import "_theme";
 
 .app-nav {
+
   li {
     display: inline;
     padding: 10px;
+
   }
 
   & a {
+    text-decoration: none;
+    transition: all 500ms;
+    padding: 3px;
+    border: 1px hsla(0, 0%, 0%, 0) solid ;
     color: white;
+
+  }
+  & a:hover {
+    color: black;
+    background-color: white;
+    border: 1px black solid;
+    text-shadow: 2px 2px 4px #000000;
+
 
   }
 }

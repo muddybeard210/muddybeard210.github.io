@@ -35,6 +35,7 @@ p {
 }
 a:link, a:visited {
   color: $app-dark;
+  transition: color 500ms;
   &:hover {
     color: white;
   }

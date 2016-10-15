@@ -11,8 +11,9 @@ contactApp.component('appNav', {
 });
 
 
-contactApp.controller('NavController', ['$log', '$location', NavController]);
+contactApp.controller('NavController', ['$log', '$location', '$animate', NavController]);
 
 function NavController($log) {
   $log.debug('smello');
+
 }
