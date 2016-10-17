@@ -35,7 +35,7 @@ p {
 }
 a:link, a:visited {
   color: $app-dark;
-  transition: color 500ms;
+  transition: all 500ms;
   &:hover {
     color: white;
   }
@@ -45,7 +45,6 @@ a:link, a:visited {
   width: 100%;
   margin: 5% auto 0 auto;
   padding-left: 15px;
-  // background-image: url('./assets/wood_background_dark.jpeg');
   background-color: rgba(#ffffff, 0.5);
   box-shadow: 1px 1px 16px 12px rgba(#ffffff, 0.5);
 
@@ -71,9 +70,9 @@ a:link, a:visited {
 
 .contactBtns i {
   font-size: 100px;
+  transition: all 500ms;
+
   &:hover {
-    // background-color: black;
-    // box-shadow: 0px 0px 20px 10px black;
   }
 }
 .contactBtns {

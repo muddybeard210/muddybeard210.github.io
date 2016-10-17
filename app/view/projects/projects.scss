@@ -1,0 +1,27 @@
+@import "_theme";
+
+@keyframes appProjects {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.app-projects {
+  animation: 0.5s;
+  animation-name: appProjects;
+}
+
+.container {
+  display: flex;
+  width: 95%;
+  margin: 5% auto 0 auto;
+  margin-bottom: 50px;
+  background-color: rgba(#ffffff, 0.5);
+  box-shadow: 1px 1px 16px 12px rgba(#ffffff, 0.5);
+  flex-direction: column;
+  float: none;
+}
+.project {
+  height: 50vh;
+  min-width: 100%;
+  border: 1px blue dotted;
+}
