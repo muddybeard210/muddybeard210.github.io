@@ -33,13 +33,13 @@ body {
 p {
   margin: 0;
 }
-a:link, a:visited {
-  color: $app-dark;
-  transition: all 500ms;
-  &:hover {
-    color: white;
-  }
-}
+// a:link, a:visited {
+//   color: $app-dark;
+//   transition: all 500ms;
+//   &:hover {
+//     color: white;
+//   }
+// }
 
 .logo {
   width: 100%;
@@ -70,7 +70,7 @@ a:link, a:visited {
 
 .contactBtns i {
   font-size: 100px;
-  transition: all 500ms;
+  transition: font-size 500ms;
 
   &:hover {
   }
