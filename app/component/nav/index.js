@@ -14,17 +14,6 @@ contactApp.component('appNav', {
 
 contactApp.controller('NavController', ['$log', '$location', '$animate', NavController]);
 
-function NavController() {
-  $(window).scroll(function(){
-    if($(this).scrollTop() > 1) {
-      $('.contactBtns i').css("font-size", "50px");
-      // $('.contactBtns').css("position", "fixed");
-
-    } else {
-      $('.contactBtns i').css("font-size", "100px");
-      // $('.contactBtns').css("position", "relative");
-
-    }
-
-  });
+function NavController($log) {
+  $log.debug('entering NavController');
 }

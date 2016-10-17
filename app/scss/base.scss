@@ -19,9 +19,9 @@ html, body {
 h1 {
   margin: 0;
 }
-div {
-  float: right;
-}
+// div {
+//   float: right;
+// }
 
 body {
   background-image: url('./assets/main-background-med-res.jpeg');
@@ -32,14 +32,8 @@ body {
 
 p {
   margin: 0;
+  color: black;
 }
-// a:link, a:visited {
-//   color: $app-dark;
-//   transition: all 500ms;
-//   &:hover {
-//     color: white;
-//   }
-// }
 
 .logo {
   width: 100%;
@@ -48,24 +42,6 @@ p {
   background-color: rgba(#ffffff, 0.5);
   box-shadow: 1px 1px 16px 12px rgba(#ffffff, 0.5);
 
-}
-.logoText {
-  width: 50%;
-  font-size: 36px;
-  color: #4f4f4f;
-  margin-top: 10px;
-  margin-bottom: 10px;
-
-  & h1 {
-    margin-bottom: 10px;
-  }
-  & span {
-    font-size: 36px;
-    color: black;
-  }
-  & p {
-    color: black;
-  }
 }
 
 .contactBtns i {
