@@ -2,7 +2,9 @@
 
 // webpack assets
 require('!!file?name=[name].[ext]!./html/index.html');
+require('file!./favicon.ico');
 require('./scss/base.scss');
+
 
 // npm modules
 const angular = require('angular');
