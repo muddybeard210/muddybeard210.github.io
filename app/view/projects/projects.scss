@@ -74,12 +74,34 @@
   .projectLinksContainer {
     display: flex;
     justify-content: center;
+
   }
   .projectLinks {
     margin: 10px;
     font-size: 50px;
+    text-decoration: none;
+  }
+
+  .arrowParent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .fa-arrow-right {
+    font-size: 50px;
   }
   #arrow {
     margin-top: 50%;
+  }
+  .projectLink {
+    text-decoration: none;
+    color: #333333;
+    transition: all 1s;
+    & i {
+      transition: all 500ms;
+      &:hover {
+        font-size: 70px;
+      }
+    }
   }
 }
