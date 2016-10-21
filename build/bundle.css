@@ -4427,21 +4427,15 @@ html, body {
 h1 {
   margin: 0; }
 
-div {
-  float: right; }
-
 body {
   background-image: url(img/4fe839ba84145cf1c724a50ead86b9e9.jpeg);
   background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat; }
 
 p {
-  margin: 0; }
-
-a:link, a:visited {
-  color: #000; }
-  a:link:hover, a:visited:hover {
-    color: white; }
+  margin: 0;
+  color: black; }
 
 .logo {
   width: 100%;
@@ -4450,52 +4444,165 @@ a:link, a:visited {
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 1px 1px 16px 12px rgba(255, 255, 255, 0.5); }
 
-.logoText {
-  width: 50%;
-  font-size: 36px;
-  color: #4f4f4f;
-  margin-top: 10px;
-  margin-bottom: 10px; }
-  .logoText h1 {
-    margin-bottom: 10px; }
-  .logoText span {
-    font-size: 36px;
-    color: black; }
-  .logoText p {
-    color: black; }
-
 .contactBtns i {
-  font-size: 100px; }
+  font-size: 100px;
+  -webkit-transition: font-size 500ms;
+  transition: font-size 500ms; }
 
 .contactBtns {
   width: 50%; }
 .app-main {
   background-color: #fff; }
+.app-nav div {
+  float: right; }
+
+.app-nav .logoText {
+  width: 50%;
+  font-size: 36px;
+  color: #4f4f4f;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  .app-nav .logoText h1 {
+    margin-bottom: 10px; }
+  .app-nav .logoText span {
+    font-size: 36px;
+    color: black; }
+  .app-nav .logoText p {
+    color: black; }
+
 .app-nav li {
   display: inline;
   padding: 10px; }
 
-.app-nav a {
+.app-nav .contactBtns:link, .app-nav .contactBtns:visited {
+  color: #000;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease; }
+  .app-nav .contactBtns:link:hover, .app-nav .contactBtns:visited:hover {
+    color: white; }
+
+.app-nav .navBtns:link, .app-nav .navBtns:visited {
+  text-decoration: none;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  -webkit-transition: box-shadow 300ms;
+  transition: box-shadow 300ms;
+  padding: 3px;
+  border: 1px transparent solid;
   color: white; }
-.mainBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 50vh;
-  width: 95%;
-  margin: 5% auto 0 auto;
-  background-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 1px 1px 16px 12px rgba(255, 255, 255, 0.5);
-  float: none; }
 
-.aboutPhoto {
-  float: left; }
-  .aboutPhoto img {
-    height: 50vh;
-    margin: 2px;
-    border-radius: 10px; }
+.app-nav .navBtns:hover {
+  color: black;
+  background-color: white;
+  border: 1px black solid;
+  text-shadow: 2px 2px 4px #000000;
+  box-shadow: 5px 5px 5px black; }
+@-webkit-keyframes appAbout {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
-.bio {
-  float: left; }
-  .bio p {
-    font-size: 24px; }
+@keyframes appAbout {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.app-about {
+  -webkit-animation: 0.5s;
+          animation: 0.5s;
+  -webkit-animation-name: appAbout;
+          animation-name: appAbout; }
+  .app-about .mainBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 95%;
+    margin: 5% auto 0 auto;
+    margin-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 1px 16px 12px rgba(255, 255, 255, 0.5);
+    float: none; }
+  .app-about .aboutPhoto {
+    float: left; }
+    .app-about .aboutPhoto img {
+      height: 50vh;
+      margin: 2px;
+      border-radius: 10px; }
+  .app-about .bio {
+    text-align: center; }
+    .app-about .bio p {
+      font-size: 24px;
+      margin-top: 20px; }
+@-webkit-keyframes appProjects {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes appProjects {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.app-projects {
+  -webkit-animation: 0.5s;
+          animation: 0.5s;
+  -webkit-animation-name: appProjects;
+          animation-name: appProjects; }
+  .app-projects .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 95%;
+    margin: 5% auto 0 auto;
+    margin-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 1px 16px 12px rgba(255, 255, 255, 0.5);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    float: none; }
+  .app-projects .project {
+    margin-top: 5px;
+    min-width: 100%;
+    -webkit-transition: box-shadow, background-color 500ms;
+    transition: box-shadow, background-color 500ms; }
+  .app-projects .project:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 5px 16px 5px black; }
+  .app-projects .project img:active {
+    box-shadow: 1px 1px 16px 12px red; }
+  .app-projects .project img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition: all 1s;
+    transition: all 1s; }
+  .app-projects p {
+    text-align: center;
+    font: 14px; }
+  .app-projects .gdandb img {
+    width: 15%; }
+  .app-projects .projectInfoScreenshot {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .app-projects p {
+    width: 100%; }
+  .app-projects .projectInfoContainer img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid grey; }
