@@ -4431,7 +4431,7 @@ div {
   float: right; }
 
 body {
-  background-image: url(img/44962bcfd9069576b6761b2a87758ef2.jpeg);
+  background-image: url(img/4fe839ba84145cf1c724a50ead86b9e9.jpeg);
   background-size: cover;
   background-repeat: no-repeat; }
 
@@ -4445,7 +4445,7 @@ a:link, a:visited {
 
 .logo {
   width: 100%;
-  margin-top: 25%;
+  margin: 5% auto 0 auto;
   padding-left: 15px;
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 1px 1px 16px 12px rgba(255, 255, 255, 0.5); }
@@ -4453,16 +4453,16 @@ a:link, a:visited {
 .logoText {
   width: 50%;
   font-size: 36px;
-  color: black;
+  color: #4f4f4f;
   margin-top: 10px;
   margin-bottom: 10px; }
   .logoText h1 {
     margin-bottom: 10px; }
   .logoText span {
     font-size: 36px;
-    font-weight: 100; }
-  .logoText .right-span {
-    margin-left: -10px; }
+    color: black; }
+  .logoText p {
+    color: black; }
 
 .contactBtns i {
   font-size: 100px; }
@@ -4477,3 +4477,25 @@ a:link, a:visited {
 
 .app-nav a {
   color: white; }
+.mainBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50vh;
+  width: 95%;
+  margin: 5% auto 0 auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 1px 1px 16px 12px rgba(255, 255, 255, 0.5);
+  float: none; }
+
+.aboutPhoto {
+  float: left; }
+  .aboutPhoto img {
+    height: 50vh;
+    margin: 2px;
+    border-radius: 10px; }
+
+.bio {
+  float: left; }
+  .bio p {
+    font-size: 24px; }
