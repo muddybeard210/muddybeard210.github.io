@@ -79,6 +79,16 @@
     margin: 10px;
     font-size: 50px;
   }
+  .projectLink {
+    color: #333333;
+  }
+  .arrowContainer {
+    display: flex;
+    align-items: center;
+  }
+  .arrowContainer i {
+    font-size: 50px;
+  }
   #arrow {
     margin-top: 50%;
   }
